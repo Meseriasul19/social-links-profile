@@ -6,20 +6,98 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: hsl(0, 0%, 8%);
     font-family: Inter;
+
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    background-color: hsl(0, 0%, 12%);
-
+    background-color:hsl(0, 0%, 12%);
+    
+    position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap:14px;
+    
+    border-radius: 16px;
+    padding: 2%;
+}
 
-    width: 40%;
+.avatar {
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+}
+
+.co {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:14px;
+}
+
+.name{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-top: 14px;
+}
+
+.location{
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 14px;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    color:  white;
+    margin-bottom: 14px;
+}
+
+.social ul{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    gap:14px;
+
+    list-style-type: none;
+}
+
+.social li {
+    background-color:  hsl(0, 0%, 20%);
+    font-weight: 600;
+    width: 300px;
+    height: 40px;
+    border-radius:8px;
+
+    padding:10px;
+
+}
+
+.social a{
+    text-decoration: none;
+    color: white;
+}
+
+.social a li:hover {
+    background-color: hsl(75, 94%, 57%);
+    color:hsl(0, 0%, 12%);
+}
+
+.attribution {
+    margin-bottom: auto;
+    color: white;
 }
